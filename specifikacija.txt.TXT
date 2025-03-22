@@ -1,0 +1,93 @@
+Kafijas aparāta programmas tehniskā specifikācija
+
+1. Mērķis
+Izveidot vienkāršu kafijas aparāta vadības programmu, kur lietotājs var pasūtīt kafiju, ievadīt monētas un saņemt dzērienu.
+
+2. Lietotājs
+Parasts lietotājs, kurš grib kafiju. Nav vajadzīgas IT zināšanas.
+
+3. Funkcijas
+
+Uzdod jautājumu: "Ko vēlies? (espresso/latte/cappuccino):"
+
+Ja ieraksta "off" - programma beidzas
+
+Ja ieraksta "report" - izdrukā cik daudz ūdens, piens, kafija un nauda ir
+
+Pārbauda, vai pietiek sastāvdaļu dzērienam
+
+Pieprasa ievadīt monētas un saskaita kopā
+
+Ja naudas nepietiek - ziņo, ka nepietiek, un atdod
+
+Ja pietiek - sagatavo dzērienu, atdod atlikumu un izdrukā "Lūdzu, te ir tava latte!"
+
+4. Saskarne
+
+Teksta ievade terminālī
+
+Atbildes ar tekstu uz ekrāna
+
+5. Ierobežojumi
+
+Darbojas tikai ar teksta ievadi
+
+Jāievada pareizi: espresso/latte/cappuccino
+
+6. Izstrāde
+Metode: vienkārša soli pa solim (Waterfall).
+Soļi:
+
+Izpētījam prasības
+
+Izveidojam kodu
+
+Testējam dzērienus un ievades
+
+Pievienojam atlikuma rēķināšanu
+
+Gatavs lietošanai
+
+7. Lietošanas scenārijs (USE CASE)
+Lietotājs: Ievada "latte"
+Sistēma: Pārbauda resursus → Pieprasa monētas
+Lietotājs: Ievada 3 USD
+Sistēma: Sagatavo latte → Izdrukā "Te ir tava latte!" un atdod atlikumu
+
+8. Testa dati
+
+Dzēriens
+
+Monētas (USD)
+
+Rezultāts
+
+espresso
+
+1.5
+
+Dzēriens sagatavots, atlikums 0.5
+
+latte
+
+2.0
+
+Nepietiek naudas, atgriež 2.0
+
+cappuccino
+
+3.0
+
+Sagatavo dzērienu, atlikums 0.5
+
+"report"
+
+-
+
+Izdrukā resursus
+
+"off"
+
+-
+
+Programma beidzas
